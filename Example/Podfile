@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KMPageControl_Example' do
+  pod 'KMPageControl', :path => '../'
+
+  target 'KMPageControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

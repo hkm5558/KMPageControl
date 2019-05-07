@@ -1,0 +1,16 @@
+PODS:
+  - KMPageControl (0.1.0)
+
+DEPENDENCIES:
+  - KMPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  KMPageControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KMPageControl: c4a77fa6e49f9590e027394086b5f36f6ae06e83
+
+PODFILE CHECKSUM: b076548f92e15f3797d1abd6674b1cf5f44b7205
+
+COCOAPODS: 1.7.0.beta.3

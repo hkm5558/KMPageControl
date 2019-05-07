@@ -1,0 +1,22 @@
+{
+  "name": "KMPageControl",
+  "version": "0.1.0",
+  "summary": "A short description of KMPageControl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/km/KMPageControl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "km": "huangkm@szclou.com"
+  },
+  "source": {
+    "git": "https://github.com/km/KMPageControl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KMPageControl/Classes/**/*"
+}
