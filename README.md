@@ -1,0 +1,2 @@
+# KMPageControl
+一种常见样式的PageControl 继承于UIPageControl
