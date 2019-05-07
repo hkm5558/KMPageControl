@@ -1,10 +1,7 @@
 # KMPageControl
-<img src="https://img.shields.io/badge/Swift-4.2-orange.svg" />
+<img src="https://img.shields.io/badge/Swift-4.2-orange.svg" /> [![CI Status](https://img.shields.io/travis/km/KMPageControl.svg?style=flat)](https://travis-ci.org/km/KMPageControl) [![Version](https://img.shields.io/cocoapods/v/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl) [![License](https://img.shields.io/cocoapods/l/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl) [![Platform](https://img.shields.io/cocoapods/p/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl)
+
 一种常见样式的PageControl 继承于UIPageControl
-[![CI Status](https://img.shields.io/travis/km/KMPageControl.svg?style=flat)](https://travis-ci.org/km/KMPageControl)
-[![Version](https://img.shields.io/cocoapods/v/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl)
-[![License](https://img.shields.io/cocoapods/l/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl)
-[![Platform](https://img.shields.io/cocoapods/p/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl)
 
 ## Gif
 
