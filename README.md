@@ -6,6 +6,10 @@
 [![License](https://img.shields.io/cocoapods/l/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl)
 [![Platform](https://img.shields.io/cocoapods/p/KMPageControl.svg?style=flat)](https://cocoapods.org/pods/KMPageControl)
 
+## Gif
+
+<img src="https://github.com/hkm5558/KMPageControl/tree/master/Gif/Gif.gif" width="256">
+
 ## Installation with CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects, which automates and simplifies the process of using 3rd-party libraries. You can install it with the following command:
