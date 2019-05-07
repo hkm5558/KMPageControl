@@ -8,7 +8,7 @@
 
 ## Gif
 
-<img src="https://github.com/hkm5558/KMPageControl/tree/master/Gif/Gif.gif" width="256">
+<img src="https://github.com/hkm5558/KMPageControl/blob/master/Gif/Gif.gif" width="256">
 
 ## Installation with CocoaPods
 
