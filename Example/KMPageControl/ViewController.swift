@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         bannerView.banners = (0...6).map({ (idx) in
             return KMBannerView.Banner(image: nil, url: nil)
         })
-        
+        bannerView.pageControl.activeSize = CGSize(width: 30, height: 10)
+        bannerView.pageControl.inactiveSize = CGSize(width: 10, height: 10)
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'KMPageControl'
-s.version          = '0.0.1'
+s.version          = '0.0.2'
 s.summary          = '一种常见样式的PageControl 继承于UIPageControl'
 
 # This description is used to generate tags and improve search results.
@@ -38,6 +38,6 @@ s.source_files = 'KMPageControl/Classes/**/*'
 # }
 
 # s.public_header_files = 'Pod/Classes/**/*.h'
-s.frameworks = 'UIKit', 'MapKit'
+s.frameworks = 'UIKit'
 # s.dependency 'AFNetworking', '~> 2.3'
 end

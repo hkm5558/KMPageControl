@@ -11,38 +11,52 @@ import Foundation
 public class KMPageControl: UIPageControl {
     
     /// 活跃指示器颜色
-    var activeColor: UIColor = UIColor(red:0.871, green:0.263, blue:0.239, alpha: 1.000)
+    public var activeColor: UIColor = UIColor(red:0.871, green:0.263, blue:0.239, alpha: 1.000)
     
     /// 非活跃指示器颜色
-    var inactiveColor: UIColor = UIColor(red:0.886, green:0.890, blue:0.898, alpha: 1.000)
+    public var inactiveColor: UIColor = UIColor(red:0.886, green:0.890, blue:0.898, alpha: 1.000)
     
     /// 活跃指示器大小
-    var activeSize: CGSize = CGSize(width: 13, height: 5)
+    public var activeSize: CGSize = CGSize(width: 13, height: 5)
     
     /// 非活跃指示器大小
-    var inactiveSize: CGSize = CGSize(width: 5, height: 5)
+    public var inactiveSize: CGSize = CGSize(width: 5, height: 5)
+    
+    /// 指示器间距
+    public var dotSpacing: CGFloat = 5.0 {
+        didSet {
+            updateDots()
+        }
+    }
     
     override public var currentPage: Int {
         didSet {
             updateDots()
         }
     }
-    
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        updateDots()
+    }
     /// 更新指示器
     func updateDots() {
         pageIndicatorTintColor = .clear
         currentPageIndicatorTintColor = .clear
-        for (index, item) in subviews.enumerated() {
-            let imageV = self.imageView(for: item, current: currentPage)
-            let centerPoint = CGPoint(x: item.bounds.midX, y: item.bounds.midY)
-            let isActive = index == currentPage
-            let size = isActive ? activeSize : inactiveSize
+        let totalW: CGFloat = CGFloat(numberOfPages - 1) * (inactiveSize.width + dotSpacing) + activeSize.width
+        var startX: CGFloat = bounds.width > totalW ? (bounds.width - totalW)/2.0 : 0
+        for (idx, dot) in subviews.enumerated() {
+            let isActive = idx == currentPage
             let color = isActive ? activeColor : inactiveColor
-            UIView.animate(withDuration: 0.25) {
+            let size = isActive ? activeSize: inactiveSize
+            let imageV = self.imageView(for: dot, current: self.currentPage)
+            let centerPoint = CGPoint(x: dot.bounds.midX, y: dot.bounds.midY)
+            UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {
+                dot.frame = CGRect(center: CGPoint(x: size.width/2.0 + startX , y: dot.center.y), size: dot.frame.size)
                 imageV?.frame = CGRect(center: centerPoint, size: size)
                 imageV?.layer.cornerRadius = min(size.width, size.height)/2.0
                 imageV?.backgroundColor = color
-            }
+            })
+            startX += (size.width + self.dotSpacing)
         }
     }
     func imageView(for subview: UIView, current page: Int) -> UIImageView?   {
