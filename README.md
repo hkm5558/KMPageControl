@@ -5,7 +5,7 @@
 
 ## Gif
 
-<img src="https://github.com/hkm5558/KMPageControl/blob/master/Gif/Gif.gif" width="256">
+<img src="https://github.com/hkm5558/KMPageControl/blob/master/Gif/gif.gif" width="403">
 
 ## Installation with CocoaPods
 
@@ -34,15 +34,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 This library requires `iOS 9.0+`
-
-## Installation
-
-KMPageControl is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'KMPageControl'
-```
 
 ## Author
 
