@@ -5,7 +5,7 @@
 
 ## Gif
 
-<img src="https://github.com/hkm5558/KMPageControl/blob/master/Gif/Gif.gif" width="403">
+<img src="https://i.loli.net/2020/11/23/WvcQINaB8XesDxr.gif" width="403">
 
 ## Installation with CocoaPods
 
