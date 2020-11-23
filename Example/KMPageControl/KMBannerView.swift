@@ -100,7 +100,7 @@ extension KMBannerView: UICollectionViewDelegate, UICollectionViewDataSource, UI
         let item = banners[indexPath.row]
         cell.imageView.image = item.image
         if let url = URL(string: item.url ?? "") {
-            // download image from url
+            // load image from url
         }
         return cell
     }
@@ -115,5 +115,11 @@ extension KMBannerView: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Did Tap Index \(indexPath.row)")
+    }
+}
+public extension UIScrollView {
+    var pageNumber: Int {
+        get { return Int(contentOffset.x / frame.size.width) }
+        set { contentOffset.x = frame.size.width * CGFloat(newValue) }
     }
 }
